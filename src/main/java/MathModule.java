@@ -11,12 +11,11 @@ public class MathModule {
     }
 
     // 2. Расчет итоговой суммы с доставкой (ЗАЛОЖЕННАЯ ОШИБКА)
-    // Вместо сложения заложено вычитание (orderAmount - deliveryFee)
     public double calculateTotalWithDelivery(double orderAmount, double deliveryFee) {
         if (orderAmount < 0 || deliveryFee < 0) {
             throw new IllegalArgumentException("Стоимость не может быть отрицательной");
         }
-        return orderAmount - deliveryFee; // ОШИБКА: должно быть orderAmount + deliveryFee
+        return orderAmount + deliveryFee;
     }
 
     // 3. Проверка четности
