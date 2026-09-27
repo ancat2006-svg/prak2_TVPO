@@ -15,7 +15,7 @@ public class MathModule {
         if (orderAmount < 0 || deliveryFee < 0) {
             throw new IllegalArgumentException("Стоимость не может быть отрицательной");
         }
-        return orderAmount + deliveryFee;
+        return orderAmount + deliveryFee;//исправлено
     }
 
     // 3. Проверка четности
